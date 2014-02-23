@@ -1,0 +1,19 @@
+{
+    "name": "aaronpk/mf2-twitter-shim",
+    "description": "Description",
+    "license": "Apache 2.0",
+    "authors": [
+        {
+            "name": "Aaron Parecki",
+            "homepage": "http://aaronparecki.com"
+        }
+    ],
+    "require": {
+        "dg/twitter-php": "3.*"
+    },
+    "autoload": {
+        "files": [
+            "src/p3k/twitter-shim.php"
+        ]    
+    }
+}
