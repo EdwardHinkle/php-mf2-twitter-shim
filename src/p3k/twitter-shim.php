@@ -45,10 +45,10 @@ namespace p3k\twitter;
       $h = floor($response->user->utc_offset / 60 / 60);
       $m = $response->user->utc_offset - ($h * 60 * 60);
       $offset = sprintf('%+03d:%02d', $h, $m);
-      $date = new DateTime(str_replace('+0000', $offset, $response->created_at));
+      $date = new \DateTime(str_replace('+0000', $offset, $response->created_at));
       $date->modify($response->user->utc_offset.' seconds');
     } else {
-      $date = new DateTime($response->created_at);
+      $date = new \DateTime($response->created_at);
     }
 
     $date = $date->format('c');
