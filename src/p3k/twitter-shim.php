@@ -7,7 +7,7 @@ namespace p3k\twitter;
     static $client;
     if(isset($client)) return $client;
     if($clientID)
-      $client = new Twitter($clientID, $clientSecret, $accessToken, $accessTokenSecret);
+      $client = new \Twitter($clientID, $clientSecret, $accessToken, $accessTokenSecret);
     return $client;
   }
 
