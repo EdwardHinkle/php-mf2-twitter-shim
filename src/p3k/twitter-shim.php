@@ -14,7 +14,7 @@ namespace p3k\twitter;
   function parseTweet($url) {
     $client = client();
     if($client == null) {
-      throw new Exception('Twitter client not configured. Run p3k\\twitter\\client() once with your Twitter credentials to initialize.');
+      throw new \Exception('Twitter client not configured. Run p3k\\twitter\\client() once with your Twitter credentials to initialize.');
     }
 
     $mf2 = array(
